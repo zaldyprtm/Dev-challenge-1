@@ -6,12 +6,13 @@ export const Menu = () => {
   return (
     <>
       <div
-        className="bg-no-repeat h-96"
+        className="bg-no-repeat h-96 bg-black"
         style={{
           backgroundImage: "url(src/assets/img/bg-cafe.jpg)",
           backgroundSize: "contain",
         }}
       ></div>
+      <div className=" z-[9999] bottom-2 relative">
       <div className="awal bg-[#1B1D1F] w-[350px] h-auto mx-auto -mt-80 rounded-lg">
         <div
           style={{
@@ -70,7 +71,7 @@ export const Menu = () => {
               </div>
               <div className="flex">
                 {item.votes === 0 ? (
-                  <img src="src/assets/img/star.svg"  />
+                  <img src="../src/assets/img/star.svg"  />
                 ) : (
                   <img src="src/assets/img/star_fill.svg"  />
                 )}
@@ -85,6 +86,7 @@ export const Menu = () => {
             </div>
           ))}
         </div>
+      </div>
       </div>
     </>
   );
