@@ -13,7 +13,7 @@ export const Menu = () => {
         }}
       ></div>
       <div className=" z-[9999] bottom-2 relative">
-      <div className="awal bg-[#1B1D1F] w-[350px] h-auto mx-auto -mt-80 rounded-lg">
+      <div className="awal bg-[#1B1D1F] w-[350px] h-auto mx-auto -mt-80 rounded-lg md:w-[750px] lg:w-[1300px]">
         <div
           style={{
             backgroundImage: "url(/src/assets/img/vector.svg)",
@@ -21,7 +21,7 @@ export const Menu = () => {
             backgroundRepeat: "no-repeat",
             backgroundPosition: "right",
           }}
-          className="mx-auto p-6"
+          className="mx-auto p-6 "
         >
           <h1
             className="text-center text-2xl text-white py-8 font-head "
@@ -46,14 +46,14 @@ export const Menu = () => {
             </p>
           </div>
         </div>
-        <div className="grid mt-6">
+        <div className="grid mt-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-2">
           {Data.map((item, index) => (
-            <div key={index} className=" mx-auto mb-10">
+            <div key={index} className=" mx-auto mb-10 lg:mb-8">
               {item.popular && <p className="text-black bg-[#F6C768] rounded-lg w-16 text-center font-head relative text-sm top-7 left-2" style={{fontWeight:'600' } }>Popular</p>}
               <img
                 src={item.image}
                 alt={item.name}
-                className=" rounded-md w-72"
+                className=" rounded-md w-72 "
               />
               <div className="flex justify-between  mt-2">
                 <p
