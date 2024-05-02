@@ -8,7 +8,7 @@ export const Menu = () => {
       <div
         className="bg-no-repeat h-96"
         style={{
-          backgroundImage: "url(../src/assets/img/bg-cafe.jpg)",
+          backgroundImage: "url(src/assets/img/bg-cafe.jpg)",
           backgroundSize: "contain",
         }}
       ></div>
@@ -25,7 +25,6 @@ export const Menu = () => {
           <h1
             className="text-center text-2xl text-white py-8 font-head "
             style={{ fontWeight: "800" }}
-            
           >
             Our Collection
           </h1>
@@ -71,9 +70,9 @@ export const Menu = () => {
               </div>
               <div className="flex">
                 {item.votes === 0 ? (
-                  <img src="../src/assets/img/star.svg"  />
+                  <img src="src/assets/img/star.svg"  />
                 ) : (
-                  <img src="../src/assets/img/star_fill.svg"  />
+                  <img src="src/assets/img/star_fill.svg"  />
                 )}
                 &nbsp; 
                 <p className="text-white mt-1">{item.rating}&nbsp;  </p> 
@@ -82,7 +81,6 @@ export const Menu = () => {
                 {item.available ? null : (
                   <p className="text-[#ED735D] ml-20 font-head mt-2" style={{fontWeight: '500'}}>Sold Out</p>
                 )}
-
               </div>
             </div>
           ))}
