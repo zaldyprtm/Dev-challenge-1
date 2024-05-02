@@ -8,7 +8,7 @@ export const Menu = () => {
       <div
         className="bg-no-repeat h-96"
         style={{
-          backgroundImage: "url(../src/assets/img/bg-cafe.jpg)",
+          backgroundImage: "url(/src/assets/img/bg-cafe.jpg)",
           backgroundSize: "contain",
         }}
       ></div>
